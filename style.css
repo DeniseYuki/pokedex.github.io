@@ -1,0 +1,33 @@
+body{
+    background-color: gold;
+    color: yellow;
+}
+.img{
+    width:100px ;
+    height: 90px;
+    margin-left: -400px;
+}
+.titulo{
+    text-align: center;
+    font-family: cursive;
+    color: red;     
+}
+.quadrado{
+    height:30%;
+    width:20% ;
+    border: 3px solid rgb(197, 33, 11);
+    padding:100px;
+}
+.navbar-brand{
+    font-family: cursive;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+
+#teste{
+
+    font-family: cursive;
+    font-size: 20px;
+}
