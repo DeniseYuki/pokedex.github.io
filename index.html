@@ -1,111 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>                 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Pokedex</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Pokemon</title>
+  <style>
+    .cards1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      margin: 10px;
+    }
+  </style>
 </head>
-<body>
 
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-
-
-      <div class="alert alert-danger" role="alert">
-       <p id="teste" >Bem vindo a pokedex</p>
-      </div>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Pokemon</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+<body id="cor">
+  <div class="alert alert-danger" role="alert">
+    <p id="teste">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/16-160306_cute-pokeball-pixel-by-nikkineko3-super-mario-world.png"
+          style="height: 40px; width: 40px; border-radius: 100%; border: 5px outset red;">
+        <span id="pokemon" style="cursor: pointer;"> Pokemon: Clique para receber sua mensagem!</span>
+      </a>
+    </p>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html"> <img src="/pokedex" alt="Pokedex"
+              style="border-radius: 100%; border: 3px outset rgb(237, 5, 5); height: 35px; width: 40px;"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://pokemondb.net/pokedex/national" target="_blank"> <img src="/pikachu" alt="Pokedex"
+              style="border-radius: 100%; border: 3px outset yellow; height: 35px; width: 40px;">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><img src="/mapaPoke.jpeg" alt="Pokedex"
+              style="border-radius: 100%; border: 3px outset rgb(48, 180, 36); height: 35px; width: 40px;">
+              Escolha seu destino
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://bulbapedia.bulbagarden.net/wiki/Kanto">Kanto</a></li>
+              <li><a class="dropdown-item"
+                  href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Johto_Pokédex_number">Johto</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://pokemondb.net/pokedex/national" target="_blank" >Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li><a class="dropdown-item" href="https://www.heypikachu.com/pokemon-ilhas-laranja">Ilhas Laranjas</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled"></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">🔍 Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <h2 class="titulo">Escolha o seu pokemon inicial</h2>
+  <br><br>
+
+  <div class="cards1">
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="card" style="width: 10rem; height: 17rem; background-color: rgba(50, 196, 50, 0.249); border: 5px solid rgba(0, 128, 0, 0.524); border-radius: 10%;">
+          <img src="/bulbasaur" class="card-img-top" alt="bulbasauro">
+          <div class="card-body">
+            <p class="card-text"> </p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pokémon)">
+              <button type="button" class="btn btn-outline-success">Escolha o Bulbasauro</button>
+            </a>
           </div>
         </div>
-      </nav>
-<div class="container">
-<br><br><br>
-<nav class="navbar bg-body-tertiary">
-      <a class="navbar-brand" href="#">
-        <img src="/pokedex" alt="Pokedex" width="50" height="65">
-       <h2 class="titulo" >Pokedex</h2> 
-      </a>
-  </nav>
 
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="quadrado">
-          <div class="col">
-            <img class="img" src="bulbasaur" alt="bulbasaur" href="https://www.pokemon.com/br/pokedex/charmander">
-          </div></div>  
-          <div class="quadrado">
-          <div class="col">
-            <img class="img" src="/charmander" alt="charmander">
-          </div></div>
-          <div class="quadrado">
-          <div class="col">
-            <img class="img" src="/squirtle" alt="squirtle">
+        <div class="card" style=" width:10rem; height: 17rem; background-color: rgba(255, 0, 0, 0.249); border: 5px solid rgba(255, 0, 0, 0.399); border-radius: 10%;">
+          <img src="/charmander" class="card-img-top" alt="charmander">
+          <div class="card-body">
+            <p class="card-text"> </p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pokémon)">
+              <button type="button" class="btn btn-outline-danger">Escolha o Charmander</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 10rem; height: 17rem; background-color: rgba(0, 255, 255, 0.361); border: 5px solid rgba(0, 195, 255, 0.524); border-radius: 10%;">
+          <img src="/squirtle" class="card-img-top" alt="squirtle">
+          <div class="card-body">
+            <p class="card-text"> </p>
+            <a href="https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pokémon)">
+              <button type="button" class="btn btn-outline-primary">Escolha o Squirtle</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
+  <script>
+    // Obtenha a referência para a palavra "Pokemon" por ID
+    var pokemon = document.getElementById('pokemon');
 
-
-
+    // Adicione um evento de clique à palavra "Pokemon"
+    pokemon.addEventListener('click', function () {
+      alert('Bem vindo ao Laboratorio do Prof Carvalho! Siga para a escolha do seu pokemon!');
+    });
+  </script>
 
 </body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+</html>

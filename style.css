@@ -1,12 +1,36 @@
 body{
-    background-color: gold;
-    color: yellow;
+    background-color: rgb(13, 12, 6);
+    color: rgb(19, 19, 13);
+    
+    
 }
-.img{
+
+#cor{
+    background-color: rgba(231, 231, 43, 0.236);
+    display:ruby-base;
+}
+#fundo{
+    background-color: rgba(255, 255, 0, 0.79);
+}
+
+img{
     width:100px ;
-    height: 90px;
-    margin-left: -400px;
+    height: 100px;
+    border-radius: 15%;
+    border: 5px ridge rgba(0, 0, 0, 0.358);
+    margin-top: 30px;
 }
+
+.cards1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    margin: 10px;
+  }
 .titulo{
     text-align: center;
     font-family: cursive;
@@ -15,7 +39,7 @@ body{
 .quadrado{
     height:30%;
     width:20% ;
-    border: 3px solid rgb(197, 33, 11);
+    border: 3px solid rgba(197, 33, 11, 0.361);
     padding:100px;
 }
 .navbar-brand{
@@ -30,4 +54,5 @@ body{
 
     font-family: cursive;
     font-size: 20px;
+    text-align: center;
 }
