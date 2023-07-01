@@ -42,11 +42,12 @@ img{
     border: 3px solid rgba(197, 33, 11, 0.361);
     padding:100px;
 }
+
 .navbar-brand{
     font-family: cursive;
     text-align: center;
-    color: red;
-    font-size: 30px;
+    color: rgb(255, 0, 0);
+    font-size:x-small;
 }
 
 
